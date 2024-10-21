@@ -1,0 +1,85 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebef;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Password Container */
+#password-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and Button Styles */
+#password-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f06292;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Letter Styles */
+#letter-container {
+    position: relative;
+    text-align: center;
+}
+
+#flying-letter {
+    position: relative; /* Keep it relative for proper positioning */
+    cursor: pointer; /* Show pointer on hover */
+    display: inline-block; /* Allow for inline positioning */
+}
+
+/* Message Styles */
+#letter-content {
+    font-size: 18px;
+    color: #333;
+    position: fixed; /* Use fixed positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset to truly center */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    padding: 20px; /* Padding for aesthetics */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    display: none; /* Initially hidden */
+    max-height: 80%; /* Limit height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+#confirmation {
+    margin-top: 20px;
+    display: none;
+}
+
+/* Romantic Background (Falling Hearts) */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('heart.gif') repeat;
+    z-index: -1;
+    opacity: 0.2;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Password Screen -->
+    <div id="password-container">
+        <h1>Enter Password to Continue</h1>
+        <input type="password" id="password-input" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+ 
+   <!-- Letter Section (Hidden initially) -->
+    <div id="letter-container" style="display: none;">
+        <div id="flying-letter" onclick="showMessage()">
+            <img src="love-letter-love-letters.gif" alt="Letter" style="width: 200px; height: auto;">
+        </div>        
+        <div id="letter-content" style="display: none; max-height: 400px; overflow-y: scroll;"></div> <!-- Scrollable message -->
+        <div id="confirmation" style="display: none;">
+            <button onclick="confirmRead()">Yes, I read the letter</button>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
